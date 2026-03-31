@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anim.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+<body>
+    <header class="elementos-container">
+        <button onclick="mostrarCategoria('sombra')" class="btn-elemento sombra">
+            <span class="icone">🌑</span>
+            SOMBRAS
+        </button>
+        <button onclick="mostrarCategoria('fogo')" class="btn-elemento fogo">
+            <span class="icone">🔥</span>
+            FOGO
+        </button>
+        <button onclick="mostrarCategoria('agua')" class="btn-elemento agua">
+            <span class="icone">🌊</span>
+            ÁGUA
+        </button>
+        <button onclick="mostrarCategoria('terra')" class="btn-elemento terra">
+            <span class="icone">🌍</span>
+            TERRA
+        </button>
+        <button onclick="mostrarCategoria('luz')" class="btn-elemento luz">
+            <span class="icone">✨</span>
+            LUZ
+        </button>
+        <button onclick="mostrarCategoria('ar')" class="btn-elemento ar active">
+            <span class="icone">🌪️</span>
+            AR
+        </button>
+        <a href="html/regras.html" id="regrasBTN"><i class="fi fi-sr-menu-food"></i></a>
+    </header>
+    
+    <main>
+
+
+
+
+        <section class="containerSombras" style="display: none;">
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Asas Noturnas</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgSombra/corvo.png" alt="Corvo" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 3</p>
+                <p>Defesa: 2</p>
+                <p>Velocidade: 8</p>
+                <p>Vida: 10</p>
+            </div>
+
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Mordida de Ébano</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgSombra/lobo.png" alt="Lobo" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 4</p>
+                <p>Defesa: 3</p>
+                <p>Velocidade: 9</p>
+                <p>Vida: 12</p>
+            </div>
+
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Morcego Sombrio</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgSombra/voador.png" alt="Morcego" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 6</p>
+                <p>Defesa: 5</p>
+                <p>Velocidade: 14</p>
+                <p>Vida: 18</p>
+            </div>
+    
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Golem das Sombras</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgSombra/golem.png" alt="Golem" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 5</p>
+                <p>Defesa: 10</p>
+                <p>Velocidade: 16</p>
+                <p>Vida: 24</p>
+            </div>
+    
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Entidade do Caos</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgSombra/entidade.png" alt="Entidade" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 9</p>
+                <p>Defesa: 7</p>
+                <p>Velocidade: 20</p>
+                <p>Vida: 32</p>
+            </div>
+    
+            <div class="carta sombra">
+                <section class="headerCarta">
+                    <h3>Aranha da Meia-Noite</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgSombra/aranha.png" alt="Aranha" id="imgMonstro">
+                <p>Elemento: Sombra</p>
+                <p>Ataque: 15</p>
+                <p>Defesa: 12</p>
+                <p>Velocidade: 23</p>
+                <p>Vida: 40</p>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="containerFogo">
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Salamandra de Brasas</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgFogo/salamandra.png" alt="Salamandra" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 5</p>
+                <p>Defesa: 2</p>
+                <p>Velocidade: 7</p>
+                <p>Vida: 10</p>
+            </div>
+
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Centelha Errante</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgFogo/brasa.png" alt="Centelha" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 6</p>
+                <p>Defesa: 3</p>
+                <p>Velocidade: 8</p>
+                <p>Vida: 12</p>
+            </div>
+
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Cão de Magma</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgFogo/loboFogo.png" alt="Cão" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 9</p>
+                <p>Defesa: 5</p>
+                <p>Velocidade: 12</p>
+                <p>Vida: 18</p>
+            </div>
+
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Falcão de Cinzas</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgFogo/falcao.png" alt="Falcão" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 8</p>
+                <p>Defesa: 7</p>
+                <p>Velocidade: 16</p>
+                <p>Vida: 24</p>
+            </div>
+
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Guardião da Forja Eterna</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgFogo/guardiao.png" alt="Guardião" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 12</p>
+                <p>Defesa: 8</p>
+                <p>Velocidade: 16</p>
+                <p>Vida: 32</p>
+            </div>
+
+            <div class="carta fogo">
+                <section class="headerCarta">
+                    <h3>Dragão do Eclipse Solar</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgFogo/dragaoFogo.png" alt="Dragão" id="imgMonstro">
+                <p>Elemento: Fogo</p>
+                <p>Ataque: 18</p>
+                <p>Defesa: 10</p>
+                <p>Velocidade: 20</p>
+                <p>Vida: 40</p>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="containerAgua" style="display: none;">
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Tritão das Poças</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgAgua/tritao.png" alt="Tritão" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 3</p>
+                <p>Defesa: 2</p>
+                <p>Velocidade: 7</p>
+                <p>Vida: 14</p>
+            </div>
+
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Cágado Casco-Vórtex</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgAgua/tartaruga.png" alt="Cágado" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 4</p>
+                <p>Defesa: 3</p>
+                <p>Velocidade: 8</p>
+                <p>Vida: 16</p>
+            </div>
+
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Hydra das Marés</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgAgua/hydra.png" alt="Hydra" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 6</p>
+                <p>Defesa: 5</p>
+                <p>Velocidade: 12</p>
+                <p>Vida: 20</p>
+            </div>
+
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Elemental de Espuma</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgAgua/tsunami.png" alt="Elemental" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 5</p>
+                <p>Defesa: 10</p>
+                <p>Velocidade: 16</p>
+                <p>Vida: 28</p>
+            </div>
+
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Kraken Abissal</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgAgua/kraken.png" alt="Kraken" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 9</p>
+                <p>Defesa: 7</p>
+                <p>Velocidade: 20</p>
+                <p>Vida: 36</p>
+            </div>
+
+            <div class="carta agua">
+                <section class="headerCarta">
+                    <h3>Leviatã Solar-Submerso</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgAgua/leviata.png" alt="Leviatã" id="imgMonstro">
+                <p>Elemento: Água</p>
+                <p>Ataque: 15</p>
+                <p>Defesa: 12</p>
+                <p>Velocidade: 22</p>
+                <p>Vida: 46</p>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="containerTerra" style="display: none;">
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Tatu-Escavador</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgTerra/tatu.png" alt="Tatu" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 3</p>
+                <p>Defesa: 6</p>
+                <p>Velocidade: 5</p>
+                <p>Vida: 12</p>
+            </div>
+
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Gnomo do Cascalho</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgTerra/gnomo.png" alt="Gnomo" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 4</p>
+                <p>Defesa: 5</p>
+                <p>Velocidade: 8</p>
+                <p>Vida: 14</p>
+            </div>
+
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Javali de Ferro</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgTerra/javali.png" alt="Javali" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 7</p>
+                <p>Defesa: 6</p>
+                <p>Velocidade: 10</p>
+                <p>Vida: 20</p>
+            </div>
+
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Rã-Martelo das Cavernas</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgTerra/ra.png" alt="Elemental" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 5</p>
+                <p>Defesa: 8</p>
+                <p>Velocidade: 13</p>
+                <p>Vida: 26</p>
+            </div>
+
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Guardião das Raízes</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgTerra/raizes.png" alt="Guardião" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 8</p>
+                <p>Defesa: 10</p>
+                <p>Velocidade: 15</p>
+                <p>Vida: 35</p>
+            </div>
+
+            <div class="carta terra">
+                <section class="headerCarta">
+                    <h3>Colosso de Obsidiana</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgTerra/colosso.png" alt="Colosso" id="imgMonstro">
+                <p>Elemento: Terra</p>
+                <p>Ataque: 14</p>
+                <p>Defesa: 14</p>
+                <p>Velocidade: 16</p>
+                <p>Vida: 45</p>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="containerLuz" style="display: none;">
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Beija-flor de Vidro</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgLuz/beijaFlor.png" alt="Beija-flor de Vidro" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 4</p>
+                <p>Defesa: 2</p>
+                <p>Velocidade: 10</p>
+                <p>Vida: 8</p>
+            </div>
+
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Faísca Prateada</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgLuz/faisca.png" alt="Faísca Prateada" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 5</p>
+                <p>Defesa: 3</p>
+                <p>Velocidade: 10</p>
+                <p>Vida: 7</p>
+            </div>
+
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Lince dos Prismas</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgLuz/gato.png" alt="Lince dos Prismas" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 8</p>
+                <p>Defesa: 4</p>
+                <p>Velocidade: 12</p>
+                <p>Vida: 18</p>
+            </div>
+
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Sentinela de Latão</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgLuz/robo.png" alt="Sentinela de Latão" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 7</p>
+                <p>Defesa: 7</p>
+                <p>Velocidade: 18</p>
+                <p>Vida: 20</p>
+            </div>
+
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Valquíria do Alvorecer</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgLuz/velocista.png" alt="Valquíria do Alvorecer" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 12</p>
+                <p>Defesa: 8</p>
+                <p>Velocidade: 22</p>
+                <p>Vida: 28</p>
+            </div>
+
+            <div class="carta luz">
+                <section class="headerCarta">
+                    <h3>Querubim do Grande Eclipse</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgLuz/deus.png" alt="Querubim do Grande Eclipse" id="imgMonstro">
+                <p>Elemento: Luz</p>
+                <p>Ataque: 18</p>
+                <p>Defesa: 12</p>
+                <p>Velocidade: 25</p>
+                <p>Vida: 35</p>
+            </div>
+        </section>
+
+
+
+        <section class="containerAr" style="display: none;">
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Borboletim do Vendaval</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgAr/borboletim.png" alt="Borboletim do Vendaval" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 3</p>
+                <p>Defesa: 2</p>
+                <p>Velocidade: 6</p>
+                <p>Vida: 10</p>
+            </div>
+
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Serpente das Nuvens</h3>
+                    <img src="img/raro.png" alt="Raro" class="raridade">
+                </section>
+                <img src="img/imgAr/serpente.png" alt="Serpente das Nuvens" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 4</p>
+                <p>Defesa: 3</p>
+                <p>Velocidade: 9</p>
+                <p>Vida: 12</p>
+            </div>
+
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Morcego-Corta-Éter</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgAr/morcego.png" alt="Morcego-Corta-Éter" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 8</p>
+                <p>Defesa: 4</p>
+                <p>Velocidade: 13</p>
+                <p>Vida: 18</p>
+            </div>
+
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Espectro das Correntes</h3>
+                    <img src="img/superRaro.png" alt="Super Raro" class="raridade">
+                </section>
+                <img src="img/imgAr/espectro.png" alt="Espectro das Correntes" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 6</p>
+                <p>Defesa: 5</p>
+                <p>Velocidade: 15</p>
+                <p>Vida: 20</p>
+            </div>
+
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Kraken dos Tufões</h3>
+                    <img src="img/epico.png" alt="Épico" class="raridade">
+                </section>
+                <img src="img/imgAr/kraken.png" alt="Kraken dos Tufões" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 13</p>
+                <p>Defesa: 8</p>
+                <p>Velocidade: 18</p>
+                <p>Vida: 30</p>
+            </div>
+
+            <div class="carta ar">
+                <section class="headerCarta">
+                    <h3>Dragão dos Furacões</h3>
+                    <img src="img/god.png" alt="God" class="raridade">
+                </section>
+                <img src="img/imgAr/dragaoAr.png" alt="Dragão dos Furacões" id="imgMonstro">
+                <p>Elemento: Ar</p>
+                <p>Ataque: 20</p>
+                <p>Defesa: 10</p>
+                <p>Velocidade: 20</p>
+                <p>Vida: 40</p>
+            </div>
+        </section>
+
+
+
+        
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

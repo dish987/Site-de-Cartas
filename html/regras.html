@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras de Combate</title>
+    <link rel="stylesheet" href="../css/regras.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+</head>
+<body>
+
+    <div class="container">
+        <h1>📜 Guia de Batalha</h1>
+
+        <section class="section">
+            <h2><i class="fi fi-sr-running"></i> 🏃 Sistema de Velocidade</h2>
+            <ul>
+                <li><strong>Iniciativa:</strong> Maior Velocidade ataca primeiro.</li>
+                <li><strong>Esquiva Crítica:</strong> Se sua VEL for o <span class="formula">dobro</span> da do oponente, há 25% de chance de dano 0.</li>
+                <li><strong>Contra-Ataque:</strong> Vencer o combate sendo mais veloz garante <span class="dano-valor">+1</span> de dano no turno seguinte.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2><i class="fi fi-sr-swords"></i> ⚔️ Tabela de Ataque (ATK)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Relação Elemental</th>
+                        <th>Dano causado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elemento Superior</td>
+                        <td><span class="dano-valor">3 Vida</span></td>
+                    </tr>
+                    <tr>
+                        <td>Elemento Igual</td>
+                        <td><span class="dano-valor">2 Vida</span></td>
+                    </tr>
+                    <tr>
+                        <td>Elemento Inferior</td>
+                        <td><span class="dano-valor">1 Vida</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="section">
+            <h2><i class="fi fi-sr-shield"></i> 🛡️ Modificadores de Defesa</h2>
+            <ul>
+                <li><strong>Defesa > ATK:</strong> <span class="formula">Dano / 2</span> (Arredonda para cima ↑)</li>
+                <li><strong>Defesa < ATK:</strong> <span class="formula">Dano * 1.5</span> (Arredonda para baixo ↓)</li>
+            </ul>
+        </section>
+
+        <section class="section sp-atk-section">
+            <h2><i class="fi fi-sr-bolt"></i> 🌟 SP.ATK (Especial)</h2>
+            <p>Disponível apenas para elementos em desvantagem (inferior).</p>
+            <ul>
+                <li><strong>Frequência:</strong> 1 vez por batalha.</li>
+                <li><strong>Sucesso:</strong> 20% de chance.</li>
+                <li><strong>Dano Total:</strong> <span class="formula">Vida Máxima / 2</span></li>
+            </ul>
+        </section>
+
+        <a href="../index.html" id="regrasBTN" title="Voltar ao Menu">
+            <i class="fi fi-sr-undo-alt"></i>
+        </a>
+    </div>
+
+</body>
+</html>
+
+<!-- Diferença de <span> e <p>
+    p (Block-level):
+Inicia uma nova linha e ocupa toda a largura.
+Ideal para blocos de texto, parágrafos e parágrafos estruturais.
+Geralmente tem margens padrão superiores e inferiores.
+
+    Span (Inline):
+Não inicia uma nova linha e se ajusta ao conteúdo.
+Ideal para aplicar estilos (CSS) ou manipular pedaços específicos de texto dentro de um parágrafo.
+Não altera o fluxo do texto ao seu redor. 
+-->

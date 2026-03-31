@@ -1,0 +1,99 @@
+/* 1. CONTAINER DE BOTÕES
+   Organiza os botões em linha, centralizados, com um fundo preto
+   e uma borda inferior para separar da área das cartas. Com o display:flex */
+.elementos-container {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    padding: 25px 0;
+    border-bottom: 4px solid #334466;
+    background-color: black;
+}
+
+/* 2. ESTILO BASE DO BOTÃO (.btn-elemento)
+   Define o formato padrão: texto em caixa alta, espaçamento interno (padding)
+   e uma sombra suave para dar profundidade. */
+.btn-elemento {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaçamento entre os itens do display: flex */
+    padding: 16px 28px;
+    font-family: 'Arial', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease; /* Faz as mudanças de estado serem suaves */
+    position: relative; /* Necessário para o efeito de brilho interno (::after) */
+    overflow: hidden;    /* Esconde o brilho quando ele sai dos limites do botão */
+}
+
+#regrasBTN {
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+#regrasBTN:hover {
+    transition: .5s;
+    transform: scale(1.2);
+}
+
+/* 3. EFEITO DE HOVER (Passar o Mouse)
+   - O ícone aumenta e gira levemente.
+   - O botão sobe 4px (translateY) e a sombra aumenta, dando efeito de "elevação". */
+.btn-elemento:hover .icone {
+    transform: scale(1.25) rotate(15deg);
+}
+
+.btn-elemento:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* 4. CORES DOS ELEMENTOS (Gradients)
+   Cada elemento usa um 'linear-gradient' para um visual metálico/moderno. */
+.btn-elemento.sombra { 
+    background: linear-gradient(135deg, #5e2a8c, #2c1847); 
+}
+.btn-elemento.fogo   { 
+    background: linear-gradient(135deg, #d62828, #9b1c1c); 
+}
+.btn-elemento.agua   { 
+    background: linear-gradient(135deg, #0077b6, #023e8a); 
+}
+.btn-elemento.terra  { 
+    background: linear-gradient(135deg, #4a7043, #2d4a2a); 
+}
+.btn-elemento.luz    { 
+    background: linear-gradient(135deg, #ffd60a, #ffaa00); color: #1a1a2e; 
+}
+.btn-elemento.ar     {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+}
+
+/* 5. EFEITO DE BRILHO "FLASH" (.btn-elemento::after)
+   Cria uma faixa branca transparente que atravessa o botão no hover.
+   Isso é feito movendo a posição da esquerda (-50% para 150%). */
+.btn-elemento::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 40%;
+    height: 200%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.7s;
+}
+
+.btn-elemento:hover::after {
+    left: 150%;
+}
